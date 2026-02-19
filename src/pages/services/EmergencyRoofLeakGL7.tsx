@@ -23,10 +23,17 @@ const breadcrumbSchema = {
 const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  name: 'Emergency Roof Leak Repairs in GL7',
-  description: 'Emergency roof leak repairs across GL7. Fast response for active water ingress, emergency tarping, and urgent roof repairs in Lechlade and surrounding villages.',
-  areaServed: [{ '@type': 'City', name: 'Lechlade' }, { '@type': 'City', name: 'Fairford' }],
+  name: 'Emergency Roof Leak Repair in GL7',
+  description: 'Emergency roof leak repair across GL7. Fast response for active water ingress, emergency tarping, and urgent roof repairs in Lechlade and surrounding villages.',
+  areaServed: [
+    { '@type': 'PostalCode', 'postalCode': 'GL7', 'addressCountry': 'GB' }
+  ],
   serviceType: 'Emergency Roof Repair',
+  provider: {
+    '@type': 'Organization',
+    name: 'GL7 Roof Quotes',
+    url: BASE_URL
+  }
 };
 
 const faqSchema = {
@@ -41,7 +48,7 @@ const faqSchema = {
 
 export default function EmergencyRoofLeakGL7() {
   return (
-    <Layout title="Emergency Roof Leak Repairs GL7 | Urgent Roofing Lechlade" description="Roof leaking now? Emergency roof leak repairs across GL7. Fast response for active water ingress. Local professionals. Submit request or call for urgent help.">
+    <Layout title="Emergency Roof Leak Repair in GL7 (Lechlade & Nearby Villages)" description="Roof leaking now? Emergency roof leak repairs across GL7. Fast response for active water ingress. Local professionals. Submit request or call for urgent help.">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
@@ -52,25 +59,35 @@ export default function EmergencyRoofLeakGL7() {
             <div style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.55)', marginBottom: '0.75rem', display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
               <Link to="/" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Home</Link>
               <span style={{ color: 'rgba(255,255,255,0.3)' }}>›</span>
-              <span style={{ color: 'rgba(255,255,255,0.5)' }}>Services</span>
+              <Link to="/services" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Services</Link>
               <span style={{ color: 'rgba(255,255,255,0.3)' }}>›</span>
               <span style={{ color: 'rgba(255,255,255,0.7)' }}>Emergency Roof Leak</span>
             </div>
-            <h1>Emergency Roof Leak Repairs in <span>GL7</span></h1>
-            <p className="hero-sub">Water coming through now? Active roof leak? Submit an emergency request and we'll match you with a local GL7 professional for urgent assistance.</p>
-            <div className="hero-trust">
-              <span><span className="check">✓</span> Fast response</span>
-              <span><span className="check">✓</span> Emergency tarping</span>
-              <span><span className="check">✓</span> Same-day available</span>
-              <span><span className="check">✓</span> GL7 coverage</span>
-            </div>
+            <h1>Roof Leaking in <span>GL7</span> Right Now? Emergency Roof Repairs Across Lechlade & Surrounding Villages</h1>
+            <p className="hero-sub">Submit your emergency request in under 60 seconds. We review and connect you with a local professional — fast.</p>
+<div className="hero-trust">
+  <span><span className="check">✓</span> Fast response</span>
+  <span><span className="check">✓</span> Emergency tarping</span>
+  <span><span className="check">✓</span> Same-day available</span>
+  <span><span className="check">✓</span> GL7 coverage</span>
+  <span><span className="check">✓</span> No shared leads — direct local response</span>
+</div>
             <div className="hero-cta">
               <Link to="/request" className="btn btn-primary btn-lg">Submit Emergency Request</Link>
-              <a href="tel:" className="btn btn-outline btn-lg">Call for urgent leaks</a>
+              <a href="tel:+447990101321" className="btn btn-outline btn-lg">Call for urgent leaks</a>
             </div>
-            <p style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.6)', marginTop: '1rem' }}>
-              We aim to respond quickly during working hours.
-            </p>
+<p style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.6)', marginTop: '1rem' }}>
+  We aim to respond within 2 working hours (Mon–Sat, 8am–6pm).
+</p>
+<p style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.6)', marginTop: '0.5rem' }}>
+  Active leak? Call now for fastest response.
+</p>
+<p style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.6)', marginTop: '0.5rem' }}>
+  Ceiling dripping? Water running down walls? Storm damage tonight?
+</p>
+<p style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.6)', marginTop: '0.5rem' }}>
+  We regularly handle emergency roof leaks across Lechlade, Fairford and surrounding GL7 villages — including storm damage, flashing failure and slipped tiles.
+</p>
           </div>
         </div>
       </section>
@@ -124,6 +141,16 @@ export default function EmergencyRoofLeakGL7() {
               <li><strong>Ridge tile loss</strong> — Complete ridge tiles dislodging during high winds</li>
             </ul>
 
+            <h2>Emergency Roof Repairs in GL7 Often Include:</h2>
+<ul>
+  <li>Ridge tile re-bedding after storm damage</li>
+  <li>Lead flashing replacement</li>
+  <li>Valley gutter repairs</li>
+  <li>Flat roof membrane repairs</li>
+  <li>Temporary weatherproofing</li>
+</ul>
+<p>Emergency attendance typically starts from £100–£200 depending on access.</p>
+
             <h2>What to Expect from Emergency Service</h2>
             <p>When you submit an emergency roof leak request:</p>
             <ol>
@@ -134,31 +161,36 @@ export default function EmergencyRoofLeakGL7() {
               <li><strong>Permanent repair quote</strong> — You'll receive a clear explanation and quote for permanent repairs</li>
             </ol>
 
+<div style={{ background: '#fef3c7', border: '1px solid #f59e0b', borderRadius: 'var(--radius)', padding: '1.5rem', margin: '2rem 0' }}>
+  <h3 style={{ margin: '0 0 0.5rem', color: '#92400e' }}>Recent Emergency Call-Out in GL7</h3>
+  <p style={{ margin: 0, color: '#92400e' }}>
+    A Fairford homeowner contacted us after high winds dislodged ridge tiles causing active water ingress. Temporary weatherproofing was applied the same day, with permanent repairs completed within 48 hours.
+  </p>
+</div>
+
             <h2>Areas Covered for Emergency Leaks</h2>
             <p>We connect homeowners with emergency roofing assistance across the GL7 postcode area, including Lechlade, Fairford, Kempsford, Southrop, Eastleach, Down Ampney, Quenington, Hatherop, Coln St Aldwyns, and Meysey Hampton.</p>
             <p>The rural nature of GL7 means properties here face specific challenges — exposed positions that take the full force of storms, older properties with ageing roof coverings, and distances that can affect response times. Local knowledge matters when responding to emergencies in these areas.</p>
 
-            <h2>Typical Emergency Repair Costs</h2>
-            <p>Emergency and temporary repairs vary in cost depending on severity, access, and time:</p>
-            <ul>
-              <li><strong>Emergency call-out</strong> — Typically £100–£200 for attendance and initial assessment</li>
-              <li><strong>Emergency tarping</strong> — £150–£400 depending on roof size and access</li>
-              <li><strong>Same-day tile replacement</strong> — From £150–£300 for straightforward access</li>
-              <li><strong>Temporary flashing repair</strong> — £200–£500 depending on location</li>
-            </ul>
-            <p><em>Note: These are guide prices. Emergency work outside normal hours may incur additional costs.</em></p>
+<div style={{ background: 'var(--bg-alt)', border: '1px solid var(--border)', borderRadius: 'var(--radius)', padding: '1.5rem', margin: '2rem 0' }}>
+  <h3 style={{ marginTop: 0 }}>Insurance and Emergency Repairs</h3>
+  <p style={{ marginBottom: '1rem' }}>Most buildings insurance policies cover emergency roof repairs. Keep receipts and take photos for your records. If the leak was caused by storm damage, this is typically covered. Your insurer may have preferred contractors, but you can usually use your own.</p>
+</div>
 
-            <div style={{ background: 'var(--bg-alt)', border: '1px solid var(--border)', borderRadius: 'var(--radius)', padding: '1.5rem', margin: '2rem 0' }}>
-              <h3 style={{ marginTop: 0 }}>Insurance and Emergency Repairs</h3>
-              <p style={{ marginBottom: '1rem' }}>Most buildings insurance policies cover emergency roof repairs. Keep receipts and take photos for your records. If the leak was caused by storm damage, this is typically covered. Your insurer may have preferred contractors, but you can usually use your own.</p>
-            </div>
+<h2>Related Services</h2>
+<ul>
+  <li><Link to="/services/roof-repairs-gl7">General Roof Repairs</Link> — For non-emergency issues</li>
+  <li><Link to="/services/storm-damage-gl7">Storm Damage Repairs</Link> — Post-storm assessments and repairs</li>
+  <li><Link to="/services/lead-flashing-repair-gl7">Lead Flashing Repairs</Link> — Common source of leaks</li>
+</ul>
 
-            <h2>Related Services</h2>
-            <ul>
-              <li><Link to="/services/roof-repairs-gl7">General Roof Repairs</Link> — For non-emergency issues</li>
-              <li><Link to="/services/storm-damage-gl7">Storm Damage Repairs</Link> — Post-storm assessments and repairs</li>
-              <li><Link to="/services/lead-flashing-repair-gl7">Lead Flashing Repairs</Link> — Common source of leaks</li>
-            </ul>
+<div style={{ background: 'var(--primary)', color: '#fff', borderRadius: 'var(--radius)', padding: '1.5rem', textAlign: 'center', margin: '2rem 0' }}>
+  <h3 style={{ margin: '0 0 0.5rem', color: '#fff' }}>Roof leaking in GL7?</h3>
+  <p style={{ margin: '0 0 1rem', opacity: 0.9 }}>Don't wait for more damage — request emergency help now.</p>
+  <Link to="/request" className="btn" style={{ background: '#fff', color: 'var(--primary)', fontWeight: 700 }}>
+    Submit Emergency Request
+  </Link>
+</div>
 
             <h2>Frequently Asked Questions</h2>
             {faqs.map((faq, i) => (
