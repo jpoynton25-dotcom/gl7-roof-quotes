@@ -20,6 +20,13 @@ import LechladeFlatRoof from './pages/LechladeFlatRoof';
 import LechladeStormDamage from './pages/LechladeStormDamage';
 import LechladeRoofInspections from './pages/LechladeRoofInspections';
 import LechladeRoofTiling from './pages/LechladeRoofTiling';
+// Service pages
+import RoofRepairsGL7 from './pages/services/RoofRepairsGL7';
+import EmergencyRoofLeakGL7 from './pages/services/EmergencyRoofLeakGL7';
+import RoofReplacementGL7 from './pages/services/RoofReplacementGL7';
+import LeadFlashingRepairGL7 from './pages/services/LeadFlashingRepairGL7';
+import ChimneyRepairsGL7 from './pages/services/ChimneyRepairsGL7';
+import FlatRoofRepairGL7 from './pages/services/FlatRoofRepairGL7';
 import FairfordRoofRepairs from './pages/FairfordRoofRepairs';
 import KempsfordRoofRepairs from './pages/KempsfordRoofRepairs';
 import SouthropRoofRepairs from './pages/SouthropRoofRepairs';
@@ -58,6 +65,13 @@ export default function App() {
         <Route path="/lechlade-roof-tiling" element={<LechladeRoofTiling />} />
         {/* Other village pages */}
         <Route path="/fairford-roof-repairs" element={<FairfordRoofRepairs />} />
+        {/* Service pages */}
+        <Route path="/services/roof-repairs-gl7" element={<RoofRepairsGL7 />} />
+        <Route path="/services/emergency-roof-leak-gl7" element={<EmergencyRoofLeakGL7 />} />
+        <Route path="/services/roof-replacement-gl7" element={<RoofReplacementGL7 />} />
+        <Route path="/services/lead-flashing-repair-gl7" element={<LeadFlashingRepairGL7 />} />
+        <Route path="/services/chimney-repairs-gl7" element={<ChimneyRepairsGL7 />} />
+        <Route path="/services/flat-roof-repair-gl7" element={<FlatRoofRepairGL7 />} />
         <Route path="/kempsford-roof-repairs" element={<KempsfordRoofRepairs />} />
         <Route path="/southrop-roof-repairs" element={<SouthropRoofRepairs />} />
         <Route path="/eastleach-roof-repairs" element={<EastleachRoofRepairs />} />
