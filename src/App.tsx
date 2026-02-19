@@ -27,6 +27,7 @@ import RoofReplacementGL7 from './pages/services/RoofReplacementGL7';
 import LeadFlashingRepairGL7 from './pages/services/LeadFlashingRepairGL7';
 import ChimneyRepairsGL7 from './pages/services/ChimneyRepairsGL7';
 import FlatRoofRepairGL7 from './pages/services/FlatRoofRepairGL7';
+import ServicesHub from './pages/services/ServicesHub';
 import FairfordRoofRepairs from './pages/FairfordRoofRepairs';
 import KempsfordRoofRepairs from './pages/KempsfordRoofRepairs';
 import SouthropRoofRepairs from './pages/SouthropRoofRepairs';
@@ -66,6 +67,7 @@ export default function App() {
         {/* Other village pages */}
         <Route path="/fairford-roof-repairs" element={<FairfordRoofRepairs />} />
         {/* Service pages */}
+        <Route path="/services" element={<ServicesHub />} />
         <Route path="/services/roof-repairs-gl7" element={<RoofRepairsGL7 />} />
         <Route path="/services/emergency-roof-leak-gl7" element={<EmergencyRoofLeakGL7 />} />
         <Route path="/services/roof-replacement-gl7" element={<RoofReplacementGL7 />} />
