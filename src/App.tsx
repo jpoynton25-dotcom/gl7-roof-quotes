@@ -12,6 +12,14 @@ import Contact from './pages/Contact';
 import ThankYou from './pages/ThankYou';
 // Village pages
 import LechladeRoofRepairs from './pages/LechladeRoofRepairs';
+// Lechlade service pages
+import LechladeRoofLeaks from './pages/LechladeRoofLeaks';
+import LechladeChimneyRepairs from './pages/LechladeChimneyRepairs';
+import LechladeGuttering from './pages/LechladeGuttering';
+import LechladeFlatRoof from './pages/LechladeFlatRoof';
+import LechladeStormDamage from './pages/LechladeStormDamage';
+import LechladeRoofInspections from './pages/LechladeRoofInspections';
+import LechladeRoofTiling from './pages/LechladeRoofTiling';
 import FairfordRoofRepairs from './pages/FairfordRoofRepairs';
 import KempsfordRoofRepairs from './pages/KempsfordRoofRepairs';
 import SouthropRoofRepairs from './pages/SouthropRoofRepairs';
@@ -40,6 +48,15 @@ export default function App() {
         <Route path="/thank-you" element={<ThankYou />} />
         {/* Village landing pages */}
         <Route path="/lechlade-roof-repairs" element={<LechladeRoofRepairs />} />
+        {/* Lechlade service pages */}
+        <Route path="/lechlade-roof-leaks" element={<LechladeRoofLeaks />} />
+        <Route path="/lechlade-chimney-repairs" element={<LechladeChimneyRepairs />} />
+        <Route path="/lechlade-guttering" element={<LechladeGuttering />} />
+        <Route path="/lechlade-flat-roof" element={<LechladeFlatRoof />} />
+        <Route path="/lechlade-storm-damage" element={<LechladeStormDamage />} />
+        <Route path="/lechlade-roof-inspections" element={<LechladeRoofInspections />} />
+        <Route path="/lechlade-roof-tiling" element={<LechladeRoofTiling />} />
+        {/* Other village pages */}
         <Route path="/fairford-roof-repairs" element={<FairfordRoofRepairs />} />
         <Route path="/kempsford-roof-repairs" element={<KempsfordRoofRepairs />} />
         <Route path="/southrop-roof-repairs" element={<SouthropRoofRepairs />} />
