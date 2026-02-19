@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gl7roofquotes.co.uk/sitemap.xml
+
+# Disallow thank-you page (no SEO value)
+Disallow: /thank-you
