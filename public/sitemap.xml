@@ -47,6 +47,11 @@
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
+  <url>
+    <loc>https://gl7roofquotes.co.uk/thank-you</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 
   <!-- GL7 Village landing pages -->
   <url>
@@ -98,6 +103,95 @@
     <loc>https://gl7roofquotes.co.uk/meysey-hampton-roof-repairs</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Lechlade service pages -->
+  <url>
+    <loc>https://gl7roofquotes.co.uk/lechlade-roof-leaks</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gl7roofquotes.co.uk/lechlade-chimney-repairs</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gl7roofquotes.co.uk/lechlade-guttering</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gl7roofquotes.co.uk/lechlade-flat-roof</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gl7roofquotes.co.uk/lechlade-storm-damage</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gl7roofquotes.co.uk/lechlade-roof-inspections</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gl7roofquotes.co.uk/lechlade-roof-tiling</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- GL7-wide service pages -->
+  <url>
+    <loc>https://gl7roofquotes.co.uk/services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gl7roofquotes.co.uk/services/roof-repairs-gl7</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gl7roofquotes.co.uk/services/emergency-roof-leak-gl7</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gl7roofquotes.co.uk/services/roof-replacement-gl7</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gl7roofquotes.co.uk/services/lead-flashing-repair-gl7</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gl7roofquotes.co.uk/services/chimney-repairs-gl7</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gl7roofquotes.co.uk/services/flat-roof-repair-gl7</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gl7roofquotes.co.uk/services/storm-damage-gl7</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gl7roofquotes.co.uk/services/ridge-tile-repair-gl7</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gl7roofquotes.co.uk/services/valley-repairs-gl7</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
 </urlset>

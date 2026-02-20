@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import Layout from '../components/Layout';
-import CONFIG from '../config';
+import { schemas } from '../utils/schema';
 
 const villages = [
   { name: 'Lechlade', slug: 'lechlade-roof-repairs' },
@@ -251,22 +251,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Schema markup */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": CONFIG.platformName,
-        "url": "https://gl7roofquotes.co.uk",
-        "description": homeDescription
-      })}} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": CONFIG.platformName,
-        "description": homeDescription,
-        "areaServed": CONFIG.areas.map(a => ({ "@type": "City", "name": a })),
-        ...(CONFIG.phoneE164 ? { "telephone": CONFIG.phoneE164 } : {})
-      })}} />
+      {/* Schema markup - Safe rendering */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.home) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.localBusiness) }} />
     </Layout>
   );
 }

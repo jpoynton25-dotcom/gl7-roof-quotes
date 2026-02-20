@@ -28,6 +28,9 @@ import LeadFlashingRepairGL7 from './pages/services/LeadFlashingRepairGL7';
 import ChimneyRepairsGL7 from './pages/services/ChimneyRepairsGL7';
 import FlatRoofRepairGL7 from './pages/services/FlatRoofRepairGL7';
 import ServicesHub from './pages/services/ServicesHub';
+import StormDamageGL7 from './pages/services/StormDamageGL7';
+import RidgeTileRepairGL7 from './pages/services/RidgeTileRepairGL7';
+import ValleyRepairsGL7 from './pages/services/ValleyRepairsGL7';
 import FairfordRoofRepairs from './pages/FairfordRoofRepairs';
 import KempsfordRoofRepairs from './pages/KempsfordRoofRepairs';
 import SouthropRoofRepairs from './pages/SouthropRoofRepairs';
@@ -74,6 +77,9 @@ export default function App() {
         <Route path="/services/lead-flashing-repair-gl7" element={<LeadFlashingRepairGL7 />} />
         <Route path="/services/chimney-repairs-gl7" element={<ChimneyRepairsGL7 />} />
         <Route path="/services/flat-roof-repair-gl7" element={<FlatRoofRepairGL7 />} />
+        <Route path="/services/storm-damage-gl7" element={<StormDamageGL7 />} />
+        <Route path="/services/ridge-tile-repair-gl7" element={<RidgeTileRepairGL7 />} />
+        <Route path="/services/valley-repairs-gl7" element={<ValleyRepairsGL7 />} />
         <Route path="/kempsford-roof-repairs" element={<KempsfordRoofRepairs />} />
         <Route path="/southrop-roof-repairs" element={<SouthropRoofRepairs />} />
         <Route path="/eastleach-roof-repairs" element={<EastleachRoofRepairs />} />
