@@ -49,10 +49,26 @@ export default function Home() {
       {/* Hero - Task 2: Updated H1 + subline */}
       <section className="hero">
         <div className="container">
-          <div className="hero-content">
+          <div className="hero-content" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
             {/* Task 2: SEO-optimized H1 */}
             <h1>Roof Repair & Emergency Roofing in <span>Lechlade (GL7)</span></h1>
             <p className="hero-sub">Describe the issue in 60 seconds. A local roofer will contact you directly — no shared leads.</p>
+
+            {/* Hero Image - Local roofing image */}
+            <img 
+              src="/lechlade-roofing-issue.jpeg" 
+              alt="Roof repair in Lechlade GL7 - damaged roof tiles requiring repair"
+              style={{ 
+                maxWidth: '100%', 
+                width: '100%', 
+                maxHeight: '320px',
+                height: 'auto',
+                objectFit: 'cover',
+                borderRadius: 'var(--radius)',
+                margin: '1.5rem 0',
+                boxShadow: '0 4px 20px rgba(0,0,0,0.15)'
+              }}
+            />
 
             <p style={{ fontSize: '0.95rem', color: 'rgba(255,255,255,0.7)', margin: '0.5rem 0 0' }}>
               Serving homeowners across Lechlade and surrounding GL7 villages.
