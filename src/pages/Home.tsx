@@ -56,7 +56,7 @@ export default function Home() {
 
             {/* Hero Image - Local roofing image */}
             <img 
-              src="/lechlade-roofing-issue.jpeg" 
+              src="/lechlade roofing issues.jpeg" 
               alt="Roof repair in Lechlade GL7 - damaged roof tiles requiring repair"
               style={{ 
                 maxWidth: '100%', 
