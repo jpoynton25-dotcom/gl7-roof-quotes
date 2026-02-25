@@ -61,11 +61,20 @@ export default function Layout({ children, title, description }: LayoutProps) {
         <meta property="og:type" content="website" />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:site_name" content={CONFIG.platformName} />
+        <meta property="og:image" content={`${BASE_URL}/GL7.png`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:locale" content="en_GB" />
 
         {/* Twitter Card */}
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDesc} />
+        <meta name="twitter:image" content={`${BASE_URL}/GL7.png`} />
+
+        {/* Additional SEO hints */}
+        <meta name="robots" content="index, follow" />
+        <link rel="author" href={`${BASE_URL}/about`} />
       </Helmet>
 
       <header className="header">

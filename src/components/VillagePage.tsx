@@ -58,6 +58,55 @@ export default function VillagePage({ data }: { data: VillageData }) {
     email: CONFIG.email || undefined,
   };
 
+  // FAQ Schema for village pages - helps Google understand page content
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: `How do I request a roofer in ${data.village}?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: `Submit a roof repair request through our online form. Describe the issue, provide your ${data.postcode} postcode, and we'll match you with a suitable local roofing professional covering ${data.village}. No shared leads, no obligation.`,
+        },
+      },
+      {
+        '@type': 'Question',
+        name: `What roofing issues are common in ${data.village}?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: `Common issues in ${data.village} (${data.postcode}) include: ${data.commonIssues.slice(0, 3).map(i => i.issue).join(', ')}. Traditional Cotswold stone properties require specialist repair approaches.`,
+        },
+      },
+      {
+        '@type': 'Question',
+        name: `Is there a cost for using GL7 Roof Quotes?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No, our platform is free to use for homeowners. Submit a request, get matched with a local professional, and receive a quote with no obligation.',
+        },
+      },
+    ],
+  };
+
+  // Service schema for the page
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: `Roof Repairs in ${data.village}`,
+    description: data.metaDesc,
+    provider: {
+      '@type': 'LocalBusiness',
+      name: 'GL7 Roof Quotes',
+    },
+    areaServed: {
+      '@type': 'Place',
+      name: data.village,
+    },
+    serviceType: 'Roof Repair',
+  };
+
   return (
     // titleTag is the keyword portion only — Layout appends "| GL7 Roof Quotes"
     <Layout title={data.titleTag} description={data.metaDesc}>
@@ -68,6 +117,14 @@ export default function VillagePage({ data }: { data: VillageData }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
 
       {/* ── HERO ── */}

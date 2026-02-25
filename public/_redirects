@@ -1,1 +1,5 @@
+# Force HTTPS - redirect HTTP to HTTPS
+http://gl7roofquotes.co.uk/* https://gl7roofquotes.co.uk/:splat 301!
+
+# SPA fallback - must be last
 /* /index.html 200
